@@ -1,0 +1,7 @@
+name: "Thaxton YDNA Message Board"
+allowedFields: ["name", "message"]
+requiredFields: ["name", "message"]
+branch: "main"
+format: "yaml"
+moderation: true
+path: "data/comments"
