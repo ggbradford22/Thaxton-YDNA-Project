@@ -14,14 +14,15 @@
             color: #2c2c2c;
         }
         .overlay {
-            background-color: rgba(0, 0, 0, 0.5);
-            padding: 2em;
-            max-width: 1400px;
-            margin: 4em auto;
-    height: calc(100% - 150px);
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.5);
-            color: white;
+    background-color: rgba(0, 0, 0, 0.5); /* 90% transparent black */
+    padding: 2em;
+    max-width: 1400px;
+    max-height: 900px;                  /* Limit height */
+    overflow-y: auto;                   /* Scroll if too tall */
+    margin: 4em auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    color: white;
         }
         header {
             text-align: center;
