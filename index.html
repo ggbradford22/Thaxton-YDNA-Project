@@ -13,16 +13,18 @@
             margin: 0;
             color: #2c2c2c;
         }
-        .overlay {
-    background-color: rgba(0, 0, 0, 0.5); /* 95% transparent black */
-    padding: 2em;
-    max-width: 1400px;
-    max-height: 900px;                  /* Limit height */
-    overflow-y: auto;                   /* Scroll if too tall */
-    margin: 4em auto;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+       .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* 90% transparent black */
+    padding: 4em;
+    overflow-y: auto;
     color: white;
+    font-size: 1.25em; /* Increase base font size */
+    line-height: 1.8;
         }
         header {
             text-align: center;
