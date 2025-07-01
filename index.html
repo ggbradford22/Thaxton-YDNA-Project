@@ -17,7 +17,7 @@
     .overlay {
       max-width: 1400px;
       margin: 2em auto;
-      background-color: rgba(0, 0, 0, 0.6);
+      background-color: rgba(0, 0, 0, 0.7);
       padding: 3em;
       color: white;
       font-size: 1.25em;
@@ -25,6 +25,10 @@
       box-sizing: border-box;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    }
+
+    .overlay * {
+      color: white;
     }
 
     header {
@@ -53,7 +57,6 @@
     .join-link a {
       font-family: Arial, sans-serif;
       text-decoration: none;
-      color: #fff;
     }
 
     .contact-section a:hover,
@@ -77,6 +80,7 @@
       width: 100%;
       height: 100px;
       margin-top: 0.5em;
+      color: black;
     }
 
     .message-board button {
@@ -115,9 +119,11 @@
 
     <div class="message-board">
       <h2>Message Board</h2>
-      <p>Have a question, idea, or want to connect with other researchers? Leave a message below:</p>
-      <textarea placeholder="Write your message here..."></textarea><br />
-      <button>Post Message</button>
+      <form method="POST" action="https://staticman3.herokuapp.com/v3/entry/github/ggbradford22/Thaxton-YDNA-Project/main">
+        <p><input type="text" name="name" placeholder="Your name" required></p>
+        <p><textarea name="message" placeholder="Write your message..." required></textarea></p>
+        <button type="submit">Post Message</button>
+      </form>
     </div>
   </div>
 </body>
