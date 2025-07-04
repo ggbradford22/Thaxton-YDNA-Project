@@ -43,17 +43,4 @@ title: Thaxton YDNA Project
   </ul>
 </div>
 
-    <h2>Message Board</h2>
-    <form method="POST" action="https://staticman3.herokuapp.com/v3/entry/github/ggbradford22/Thaxton-YDNA-Project/main">
-      <p><input type="text" name="name" placeholder="Your name" required></p>
-      <p><textarea name="message" placeholder="Write your message..." required></textarea></p>
-      <button type="submit" style="color: black;">Post Message</button>
-    </form>
-    <h3>Messages:</h3>
-    <ul>
-      {% for comment in site.data.comments %}
-        <li><strong>{{ comment[1].name }}</strong>: {{ comment[1].message }}</li>
-      {% endfor %}
-    </ul>
-  </div>
-</div>
+    
